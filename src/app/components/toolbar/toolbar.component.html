@@ -1,5 +1,5 @@
 <mat-toolbar>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <button mat-icon-button (click)="start.toggle()" class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
     <span>My App</span>
@@ -11,3 +11,7 @@
       <mat-icon>share</mat-icon>
     </button>
   </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav mode="side" #start style="width: 300px;">Start</mat-sidenav>
+    <mat-sidenav-content>Main</mat-sidenav-content>
+  </mat-sidenav-container>
